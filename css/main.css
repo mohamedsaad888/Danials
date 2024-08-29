@@ -1,0 +1,331 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+:root{
+    --main-color:#343434;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    color: #748182;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #333;
+}
+
+
+.main-color{
+    color: var(--main-color);
+}
+
+.classic-button {
+    border: 1px solid #0e0e0e;
+    padding: 10px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.buton-bg {
+        background: #1c1c1c;
+        color: #eee;
+    }
+    .buton{
+        padding: 10px 30px;
+        border: 1px solid #1c1c1c;
+        border-radius: 5px;
+        font-size: 13px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .title h1{
+        font-size: 50px;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+
+    }
+    .title h1::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        background-image: url(../images/dots.png);
+        background-repeat: repeat;
+        left: -4px;
+        bottom: -2px;
+        z-index: -1;
+    }
+
+
+
+
+/* Global Classes and variables */
+/*Start Nav*/
+nav ul li{
+    padding: 5px 10px;
+    position: relative;
+
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 21px;
+    background-color: #0e0e0e;
+    bottom: 10px;
+    transition: all 0.3s;
+}
+nav ul li:hover::after{
+    width: 55%;
+}
+
+
+/*End Nav*/
+
+/* Start Header*/
+#header .text-header{
+    font-weight: 800;
+}
+#header {
+    background-image: url(..//images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#header .nav-item .nav-link:hover{
+    
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#header .icons i{
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: rgba(0, 0,0, 0.5);
+    color: white;
+}
+
+
+
+#header .over-lay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* End Header*/
+
+
+/* start about*/
+#About .classic-button:hover{
+    background-color: white;
+    color: #0e0e0e;
+}
+#About .about-img{
+    position: relative;
+    padding: 0 0 0 30px ;
+
+}
+#About .about-img::after{
+    content: "";
+    position: absolute;
+    width: 61%;
+    height: 85%;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+
+/* End about*/
+
+/*start services*/
+
+#Services .services-icons{
+margin:25px auto;
+background-color: lightgray; 
+border-radius: 25px; 
+padding: 15px;
+transition: all 0.3s;
+font-size: 22px;
+}
+#Services .services-icons:hover{
+    color: white;
+    background-color: #0e0e0e;
+}
+/*End services*/
+
+
+/*Start Portfolio*/
+.work-img .imglayer{
+    background-color: rgba(255, 255, 255,0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    width: calc(100% - 8px ) !important;
+    height: calc(100% - 8px) !important;
+    margin: 4px;
+}
+.work-img .imglayer:hover{
+    color: #0e0e0e !important;
+    opacity: 1;
+    
+}
+#Portfolio p{
+    color: black !important;
+}
+.work-img .imglayer .details{
+    position: absolute;
+    top:100% ;
+    transition: all 0.5s;
+}
+.work-img:hover .details{
+    top: 40%;
+} 
+.work-img .imglayer a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: white;
+}
+.work-img .imglayer a:hover{
+    background-color: white;
+    color: #111;
+}
+
+
+/*end Portfolio*/
+/*Start Carusol*/
+#Client{
+    background-color: #f8f8f8;
+}
+
+#Client .carousel-inner .carousel-item img{
+width: 10%;
+}
+.carousel-indicators{
+    position: absolute !important;
+    
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+margin: -15px 8px;
+background-color: #869791;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+}
+
+
+
+/*End Carusol*/
+
+
+/*Start Numbers*/
+.Numbers{
+    height: 250px;
+}
+/*End Numbers*/
+
+/*Start Our Team*/
+
+#Team {
+background-color: #f8f8f8;
+    
+}
+#Team .work-img img{
+    transition:all 0.3s ;
+}
+#Team .work-img:hover img{
+transform: scale(1.3);
+}
+#Team .work-img .imglayer{
+    background-color: rgba(255, 250, 250,0.8);
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+#Team .work-img:hover .imglayer{
+    color: #0e0e0e;
+    opacity: 1;
+    transform: scale(1) rotateY(360deg);
+}
+
+#Team .work-img:hover .details{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+} 
+#Team .work-img .imglayer span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Team .details-team{
+    background-color: gray;
+}
+
+
+/*End Our Team*/
+
+
+/*Start Contact*/
+#Contact span{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 69px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    transition: all 0.3s;
+}
+#Contact span:hover{
+    background-color: black;
+    color: white;
+}
+#Contact .Form button{
+    background-color: #0e0e0e;
+    color: azure;
+    border: 1 solid black;
+    padding: 5px;
+}
+/*End Contact*/
+/*Start Form*/
+#Contact button:hover{
+    background-color: white;
+    color: #0e0e0e;
+}
+/*End Form*/
+
+/*Start Footer*/
+.footer{
+    height:80px;
+    background-color: #0e0e0e;
+    color: #748182;
+    font-size: 13px;
+    margin: auto;
+}
+/*End Footer*/
